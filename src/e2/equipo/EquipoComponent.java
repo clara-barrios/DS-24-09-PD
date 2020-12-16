@@ -6,9 +6,9 @@ public abstract class EquipoComponent {
     public void anhadir(EquipoComponent equipoComponent) {
         throw new UnsupportedOperationException();
     }
-    public void eliminar(EquipoComponent equipoComponent) {
+    /*public void eliminar(EquipoComponent equipoComponent) {
         throw new UnsupportedOperationException();
-    }
+    }*/
     public String getName(){
         throw new UnsupportedOperationException();
     }
@@ -24,6 +24,10 @@ public abstract class EquipoComponent {
     public double getTotalPrice(){
         throw new UnsupportedOperationException();
     }
+
+   /* public int getChild(int i){
+        throw new UnsupportedOperationException();
+    }*/
     public void print(){
         throw new UnsupportedOperationException();
     }
