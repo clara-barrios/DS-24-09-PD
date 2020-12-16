@@ -9,10 +9,8 @@ public class Equipo extends EquipoComponent {
     private double totalHours;
     private double totalPrice;
 
-    public Equipo(String name, double totalHours, double totalPrice){
+    public Equipo(String name){
         this.name=name;
-        this.totalHours= totalHours;
-        this.totalPrice = totalPrice;
     }
     public String getName(){return name;}
     public double getTotalHours(){
@@ -23,7 +21,7 @@ public class Equipo extends EquipoComponent {
 
     public double getTotalPrice() {
         for(EquipoComponent ec: Grupo)
-            totalPrice += ec.getTotalPrice();
+            totalPrice += ec.getPrice();
         return totalPrice;}
 
     public void anhadir(EquipoComponent equipoComponent){
@@ -36,10 +34,7 @@ public class Equipo extends EquipoComponent {
 
 
     public void print() {
-        System.out.println("\nTeam " + getName() +":");
-        System.out.println(" "+getTotalHours() + " hours,");
-        System.out.println(" "+ getTotalPrice()+" €");
-
+        System.out.println("\nTeam " + getName() +": "+getTotalHours() + " hours, "+ getTotalPrice()+" €");
         for (EquipoComponent ec : Grupo)
             ec.print();
     }

@@ -17,8 +17,6 @@ public class Trabajador extends EquipoComponent{
     public double getPrice(){return price;}
 
     public void print(){
-        System.out.println("Worker " + getName()+":");
-        System.out.println(" "+ getHours()+" hours");
-        System.out.println(", " +getPrice() + " €");
+        System.out.println("Worker " + getName()+": "+ getHours()+" hours, "+getPrice() + " €");
     }
 }
