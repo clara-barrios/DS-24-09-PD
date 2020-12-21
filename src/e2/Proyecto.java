@@ -4,15 +4,14 @@ import e1.modos.Program;
 import e2.equipo.EquipoComponent;
 import e2.equipo.*;
 import e2.equipo.Equipo;
-import e2.equipo.trabajador.Trabajador;
+
 
 import java.util.ArrayList;
 
 public class Proyecto extends EquipoComponent {
-    Trabajador trabajador;
-    Equipo equipo;
 
-    private final ArrayList<Equipo> Grupo=new ArrayList<>();
+
+    private final ArrayList<EquipoComponent> Grupo=new ArrayList<>();
     private final String name;
 
      public Proyecto (String name){
@@ -20,7 +19,7 @@ public class Proyecto extends EquipoComponent {
      }
      public String getName(){return name;}
 
-    public void anhadir(Equipo equipo){
+    public void anhadir(EquipoComponent equipo){
 
         //for (Equipo ec : Grupo )
        // if(!(ec==equipo)) //no meter dos veces el mismo trabajador
@@ -31,7 +30,7 @@ public class Proyecto extends EquipoComponent {
     }*/
 public void print(){
     System.out.println("\n "+ getName());
-    for (Equipo ec : Grupo)
+    for (EquipoComponent ec : Grupo)
         ec.print();
 }
 
