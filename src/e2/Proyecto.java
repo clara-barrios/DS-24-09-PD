@@ -19,11 +19,11 @@ public class Proyecto extends EquipoComponent {
      }
      public String getName(){return name;}
 
-    public void anhadir(EquipoComponent equipo){
+    public void anhadir(EquipoComponent equipoComponent){
 
         //for (Equipo ec : Grupo )
        // if(!(ec==equipo)) //no meter dos veces el mismo trabajador
-        Grupo.add(equipo);
+        Grupo.add(equipoComponent);
     }
    /* public void eliminar(Equipo equipo){
          Grupo.remove(equipo);

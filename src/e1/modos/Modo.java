@@ -1,4 +1,4 @@
-package e1.modos;
+/*package e1.modos;
 
 public interface Modo  {
   Manual;
@@ -7,3 +7,4 @@ public interface Modo  {
     Timer timer;
 
 }
+*/

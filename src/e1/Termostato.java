@@ -1,4 +1,4 @@
-package e1;
+/*package e1;
 import e1.modos.*;
 public class Termostato{
     private boolean comprueba;
@@ -10,4 +10,4 @@ public class Termostato{
 
 
 
-}
+}*/
